@@ -37,7 +37,7 @@ namespace SinglyLinkedList
 		}
 
 		// appendNode
-		public bool appendNode(Node node)
+		public bool AppendNode(Node node)
 		{
 			if (node is null) return false;
 
@@ -57,8 +57,17 @@ namespace SinglyLinkedList
 			}
 		}
 
+		public Node? RemoveHeadNode()
+		{
+			if (_head is null) return null;
+
+			Node removedNode = _head;
+			_head = _head?.NextLink;
+			_size--;
+			return removedNode;
+		}
 		// removeNodeAtPosition
-		// removeHead
+		
 		// removeTail
 		// insertNodeAtPosition
 		// clearList

@@ -24,10 +24,13 @@ namespace SinglyLinkedList
 
             Console.WriteLine("\nCreating a node to add...");
             Node node_C = new Node(200);
-            Console.WriteLine($"Node appended: {list.appendNode(node_C)}");
+            Console.WriteLine($"Node appended: {list.AppendNode(node_C)}");
 
             DisplayCurrentList(list);
-           
+
+            Console.WriteLine("Revoving head node...");
+            Console.WriteLine($"Node removed is: {list.RemoveHeadNode()?.Data}");
+            DisplayCurrentList(list);
         }
 
         private static void DisplayCurrentList(SinglyLinkedList list)
