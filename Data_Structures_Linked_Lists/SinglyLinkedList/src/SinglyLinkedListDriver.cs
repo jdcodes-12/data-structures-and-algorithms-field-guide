@@ -31,6 +31,12 @@ namespace SinglyLinkedList
             Console.WriteLine("Revoving head node...");
             Console.WriteLine($"Node removed is: {list.RemoveHeadNode()?.Data}");
             DisplayCurrentList(list);
+
+            Console.WriteLine($"List is empty: {list.IsEmpty()}");
+            Console.WriteLine($"Current List Size: {list.Size}");
+            Console.WriteLine($"Clearing list... {list.ClearList()}");
+            Console.WriteLine($"Current List Size: {list.Size}");
+            Console.WriteLine($"List is empty: {list.IsEmpty()}");
         }
 
         private static void DisplayCurrentList(SinglyLinkedList list)

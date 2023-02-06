@@ -66,12 +66,23 @@ namespace SinglyLinkedList
 			_size--;
 			return removedNode;
 		}
+
 		// removeNodeAtPosition
-		
 		// removeTail
 		// insertNodeAtPosition
-		// clearList
-		// isEmpty
+		 		
+		public bool IsEmpty()
+		{
+			return _size == 0;
+		}
+
+		public bool ClearList()
+		{
+			_head = null;
+			_size = 0;
+			return true;
+		}
+
 		public void DisplayList()
 		{
 			Node temp = _head!;
@@ -90,8 +101,6 @@ namespace SinglyLinkedList
 			Console.WriteLine("]");
 		}
 		
-
-		// helpers
 		private Node TraverseToEndOfList()
 		{
 			Node temp = _head;
@@ -101,6 +110,5 @@ namespace SinglyLinkedList
 
 			return temp;
 		}
-		// 
 	}	
 }
