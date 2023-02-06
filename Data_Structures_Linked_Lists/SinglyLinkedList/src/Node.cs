@@ -7,7 +7,7 @@ namespace SinglyLinkedList
 
         public Node()
         {
-            Data = 0;
+            Data = -1;
             NextLink = null;
         }
 
