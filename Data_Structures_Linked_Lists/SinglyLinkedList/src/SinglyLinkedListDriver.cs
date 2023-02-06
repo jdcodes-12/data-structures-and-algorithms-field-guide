@@ -28,8 +28,12 @@ namespace SinglyLinkedList
 
             DisplayCurrentList(list);
 
-            Console.WriteLine("Revoving head node...");
+            Console.WriteLine("Removing head node...");
             Console.WriteLine($"Node removed is: {list.RemoveHeadNode()?.Data}");
+            DisplayCurrentList(list);
+
+            Console.WriteLine("Removing tail node...");
+            Console.WriteLine($"Node removed is: {list.RemoveTailNode()?.Data}");
             DisplayCurrentList(list);
 
             Console.WriteLine($"List is empty: {list.IsEmpty()}");

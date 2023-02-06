@@ -67,8 +67,17 @@ namespace SinglyLinkedList
 			return removedNode;
 		}
 
+		public Node? RemoveTailNode()
+		{
+			Node nodeBeforeTail = TraverseToPositionBefore(_size - 1);
+			Node tailNode = nodeBeforeTail?.NextLink;
+			nodeBeforeTail.NextLink = null;
+			_size--;
+			return tailNode;
+			
+		}
 		// removeNodeAtPosition
-		// removeTail
+		
 		// insertNodeAtPosition
 		 		
 		public bool IsEmpty()
@@ -109,6 +118,21 @@ namespace SinglyLinkedList
 				temp = temp.NextLink;
 
 			return temp;
+		}
+
+		private Node TraverseToPositionBefore(int position)
+		{
+			Node travPointer = _head;
+			int moves = 0;
+
+			while (moves < position - 1)
+			{
+				travPointer = travPointer?.NextLink;
+				moves++;
+			}
+		
+
+			return travPointer;
 		}
 	}	
 }
