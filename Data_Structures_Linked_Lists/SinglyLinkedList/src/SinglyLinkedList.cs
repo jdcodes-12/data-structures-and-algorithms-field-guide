@@ -37,6 +37,26 @@ namespace SinglyLinkedList
 		}
 
 		// appendNode
+		public bool appendNode(Node node)
+		{
+			if (node is null) return false;
+
+			else if (_head is null)
+			{
+				_head = node;
+				_size++;
+				return true;
+			}
+			
+			else
+			{
+				Node endNode = TraverseToEndOfList();
+				endNode.NextLink = node;
+				_size++;
+				return true;
+			}
+		}
+
 		// removeNodeAtPosition
 		// removeHead
 		// removeTail
@@ -63,7 +83,15 @@ namespace SinglyLinkedList
 		
 
 		// helpers
-		// traverse list to position before
+		private Node TraverseToEndOfList()
+		{
+			Node temp = _head;
+			
+			while (temp?.NextLink != null)
+				temp = temp.NextLink;
+
+			return temp;
+		}
 		// 
 	}	
 }

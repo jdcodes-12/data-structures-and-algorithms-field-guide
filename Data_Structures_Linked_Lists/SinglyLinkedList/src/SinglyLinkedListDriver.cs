@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace SinglyLinkedList 
 { 
     class SinglyLinkedListDriver {
@@ -18,7 +20,19 @@ namespace SinglyLinkedList
             Console.WriteLine($"\nAdded node_a: {list.PrependNode(node_A)}");
             Console.WriteLine($"Added node_b: {list.PrependNode(node_B)}");
 
-            Console.Write("Current List: ");
+            DisplayCurrentList(list);
+
+            Console.WriteLine("\nCreating a node to add...");
+            Node node_C = new Node(200);
+            Console.WriteLine($"Node appended: {list.appendNode(node_C)}");
+
+            DisplayCurrentList(list);
+           
+        }
+
+        private static void DisplayCurrentList(SinglyLinkedList list)
+        {
+            Console.Write("\nCurrent List: ");
             list.DisplayList();
         }
     }
