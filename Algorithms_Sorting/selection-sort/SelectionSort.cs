@@ -5,7 +5,7 @@ namespace Algorithms.Sorting
     class SelectionSort { 
         static void Main(String[] args)
         {
-            int[] numbers = { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
+            int[] numbers = { 300, 275, 675, 90, 8, 5, 3, 2, 90, 91, 93, 800 };
             Console.Write("Unsorted List: ");
             DisplayList(numbers);
             RunSelectionSort(numbers);
@@ -34,20 +34,21 @@ namespace Algorithms.Sorting
 
         static void RunSelectionSort(int[] unsortedArr)
         {
-            int minIndex, i, j, temp;
+            int minIndex, temp;
             int n = unsortedArr.Length;
-
-            for (i = 0; i < n; i++)
+            
+            for (int i = 0; i < n - 1; i++)
             {
                 minIndex = i;
-                for (j = i+1; j < n; j++)
-                    if (unsortedArr[j] < unsortedArr[i])
+                for (int j = i+1; j < n; j++)
+                {
+                    if (unsortedArr[j] < unsortedArr[minIndex])
                         minIndex = j;
+                }
 
-                // Swap
-                temp = unsortedArr[i];
-                unsortedArr[i] = unsortedArr[minIndex];
-                unsortedArr[minIndex] = temp;
+                temp = unsortedArr[minIndex];
+                unsortedArr[minIndex] = unsortedArr[i];
+                unsortedArr[i] = temp;
             }
         }
     }
