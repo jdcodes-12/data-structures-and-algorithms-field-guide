@@ -1,5 +1,10 @@
+# VS Code Solutions & Config
+vs-solutions/
 .vs/
-Data_Structures_Linked_Lists/.vs/
-Data_Structures_Linked_Lists/SinglyLinkedList/bin/
-Data_Structures_Linked_Lists/SinglyLinkedList/obj/
-/algorithms/sorting/selection-sort/selection-sort-implementations/java/SelectionSort/target/
+
+# C# & C++ bin/ & obj/ directories
+data-structures/02-linked-lists/list-implementations/01-singly-linked/C#/bin/
+data-structures/02-linked-lists/list-implementations/01-singly-linked/C#/obj/
+
+# java related files
+algorithms/sorting/selection-sort/selection-sort-implementations/java/SelectionSort/target/
