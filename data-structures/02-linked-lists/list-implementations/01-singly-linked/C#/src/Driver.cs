@@ -1,4 +1,5 @@
 ﻿#region
+using System.Xml.Linq;
 using static System.Console;
 #endregion
 
@@ -11,11 +12,37 @@ namespace SinglyLinkedList
             DisplayListState(list);
 
             Node node_a = CreateNodeWithInternalDataOf(5);
-            PrependNode(node_a, list);
+            Node node_b = CreateNodeWithInternalDataOf(10);
+            Node node_c = CreateNodeWithInternalDataOf(15);
+            Node node_d = CreateNodeWithInternalDataOf(20);
+            Node node_e = CreateNodeWithInternalDataOf(25);
+            Node node_f = CreateNodeWithInternalDataOf(30);
+            Node node_g = CreateNodeWithInternalDataOf(35);
+
+            WriteLine("Populating list with nodes...");
+            Node[] nodes = { node_a, node_b, node_c, node_d, node_e };
+           
+            foreach (Node node in nodes) {
+                AppendNode(node, list);
+            }
+            WriteLine("Done populating.\n");
+
+            DisplayListState(list);
+
+            // Change head node
+            PrependNode(node_f, list);
+            DisplayListState(list);
+
+            InsertNodeAtPosition(node_g, 2, list);
+            DisplayListState(list);
             list.DisplayList();
 
-            Node node_b = CreateNodeWithInternalDataOf(10);
-            AppendNode(node_b, list);
+            RemoveNodeAtPosition(2, list);
+            DisplayListState(list);
+            list.DisplayList();
+
+            WriteLine($"List is empty: {list.IsEmpty()}");
+            WriteLine($"Clearing list... {list.ClearList()}");
             list.DisplayList();
             DisplayListState(list);
 
@@ -38,14 +65,26 @@ namespace SinglyLinkedList
 
         private static void PrependNode(Node node, SinglyLinkedList list)
         {
-            WriteLine("\nPrepending node to list...");
-            WriteLine($"{node.StringifyNode()} was prepended: {list.PrependNode(node)}");
+            WriteLine($"\nPrepending {node.StringifyNode()} to list...");
+            WriteLine($"Node was prepended: {list.PrependNode(node)}");
         }
 
         private static void AppendNode(Node node, SinglyLinkedList list)
         {
-            WriteLine("\nAppending node to list...");
-            WriteLine($"{node.StringifyNode()} was appended: {list.AppendNode(node)}");
+            WriteLine($"\nAppending ${node.StringifyNode()} to list...");
+            WriteLine($"Node was appended: {list.AppendNode(node)}");
+        }
+
+        private static void InsertNodeAtPosition(Node node, int position, SinglyLinkedList list)
+        {
+            WriteLine($"\nInserting {node.StringifyNode()} to list at position ${position}...");
+            WriteLine($"Node was inserted: {list.InsertNodeAtPosition(node, position)}");
+        }
+
+        private static void RemoveNodeAtPosition(int position, SinglyLinkedList list)
+        {
+            WriteLine($"\nRemoving the Node at position {position}...");
+            WriteLine($"Node removed was: {list.RemoveNodeAtPosition(position)?.StringifyNode()}");
         }
     }
 }
