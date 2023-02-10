@@ -2,9 +2,11 @@
 vs-solutions/
 .vs/
 
-# C# & C++ bin/ & obj/ directories
+# (C# & C++) bin/ & obj/ directories
 data-structures/02-linked-lists/list-implementations/01-singly-linked/C#/bin/
 data-structures/02-linked-lists/list-implementations/01-singly-linked/C#/obj/
+data-structures/02-linked-lists/list-implementations/02-doubly-linked-list/C#/bin/
+data-structures/02-linked-lists/list-implementations/02-doubly-linked-list/C#/obj/
 
 # java related files
 algorithms/sorting/selection-sort/selection-sort-implementations/java/SelectionSort/target/
