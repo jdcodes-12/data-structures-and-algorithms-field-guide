@@ -1,12 +1,21 @@
-# VS Code Solutions & Config
+## VS Code Solutions & Config
 vs-solutions/
 .vs/
 
-# (C# & C++) bin/ & obj/ directories
+## `bin/` & `obj/` directories for .NET Projects
 data-structures/02-linked-lists/list-implementations/01-singly-linked/C#/bin/
 data-structures/02-linked-lists/list-implementations/01-singly-linked/C#/obj/
 data-structures/02-linked-lists/list-implementations/02-doubly-linked-list/C#/bin/
 data-structures/02-linked-lists/list-implementations/02-doubly-linked-list/C#/obj/
 
-# java related files
+## `bin/` & `obj/` directores for Test Projects
+tests/SinglyLinkedList_Test/SinglyLinkedList_Test.csproj
+tests/SinglyLinkedList_Test/bin/
+tests/SinglyLinkedList_Test/obj/
+
+## `bin/` & `obj` directorires for Class Library
+misc/libs/DataStructures_Library/obj/
+misc/libs/DataStructures_Library/bin/
+
+## java related files
 algorithms/sorting/selection-sort/selection-sort-implementations/java/SelectionSort/target/
