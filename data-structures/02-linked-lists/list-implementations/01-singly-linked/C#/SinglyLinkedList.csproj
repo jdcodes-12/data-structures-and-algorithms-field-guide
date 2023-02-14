@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\misc\libs\DataStructures_Library\DataStructures_Library.csproj" />
+  </ItemGroup>
+
 </Project>

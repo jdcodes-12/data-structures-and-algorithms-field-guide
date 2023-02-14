@@ -1,0 +1,12 @@
+C:\Users\johnn\development\projects\data-structures-and-algorithms-field-guide\misc\libs\DataStructures_Library\obj\Debug\net7.0\DataStructures_Library.csproj.AssemblyReference.cache
+C:\Users\johnn\development\projects\data-structures-and-algorithms-field-guide\misc\libs\DataStructures_Library\obj\Debug\net7.0\DataStructures_Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johnn\development\projects\data-structures-and-algorithms-field-guide\misc\libs\DataStructures_Library\obj\Debug\net7.0\DataStructures_Library.AssemblyInfoInputs.cache
+C:\Users\johnn\development\projects\data-structures-and-algorithms-field-guide\misc\libs\DataStructures_Library\obj\Debug\net7.0\DataStructures_Library.AssemblyInfo.cs
+C:\Users\johnn\development\projects\data-structures-and-algorithms-field-guide\misc\libs\DataStructures_Library\obj\Debug\net7.0\DataStructures_Library.csproj.CoreCompileInputs.cache
+C:\Users\johnn\development\projects\data-structures-and-algorithms-field-guide\misc\libs\DataStructures_Library\bin\Debug\net7.0\DataStructures_Library.deps.json
+C:\Users\johnn\development\projects\data-structures-and-algorithms-field-guide\misc\libs\DataStructures_Library\bin\Debug\net7.0\DataStructures_Library.dll
+C:\Users\johnn\development\projects\data-structures-and-algorithms-field-guide\misc\libs\DataStructures_Library\bin\Debug\net7.0\DataStructures_Library.pdb
+C:\Users\johnn\development\projects\data-structures-and-algorithms-field-guide\misc\libs\DataStructures_Library\obj\Debug\net7.0\DataStructures_Library.dll
+C:\Users\johnn\development\projects\data-structures-and-algorithms-field-guide\misc\libs\DataStructures_Library\obj\Debug\net7.0\refint\DataStructures_Library.dll
+C:\Users\johnn\development\projects\data-structures-and-algorithms-field-guide\misc\libs\DataStructures_Library\obj\Debug\net7.0\DataStructures_Library.pdb
+C:\Users\johnn\development\projects\data-structures-and-algorithms-field-guide\misc\libs\DataStructures_Library\obj\Debug\net7.0\ref\DataStructures_Library.dll

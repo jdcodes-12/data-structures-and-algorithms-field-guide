@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SinglyLinkedList_Test
-build_property.ProjectDir = C:\Users\johnn\development\projects\data-structures-and-algorithms-field-guide\data-structures\02-linked-lists\list-implementations\01-singly-linked\C#\SinglyLinkedList_Test\
+build_property.ProjectDir = C:\Users\johnn\development\projects\data-structures-and-algorithms-field-guide\tests\SinglyLinkedList_Test\
