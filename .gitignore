@@ -1,0 +1,47 @@
+## VS Code Solutions & Config
+vs-solutions/
+.vs/
+
+## `bin/` & `obj/` directories for .NET Projects
+data-structures/02-linked-lists/list-implementations/01-singly-linked/C#/SinglyLinkedList.csproj
+data-structures/02-linked-lists/list-implementations/01-singly-linked/C#/bin/
+data-structures/02-linked-lists/list-implementations/01-singly-linked/C#/obj/
+data-structures/02-linked-lists/list-implementations/02-doubly-linked-list/C#/DoublyLinkedList.csproj
+data-structures/02-linked-lists/list-implementations/02-doubly-linked-list/C#/bin/
+data-structures/02-linked-lists/list-implementations/02-doubly-linked-list/C#/obj/
+
+## `bin/` & `obj/` directores for Test Projects
+tests/SinglyLinkedList_Test/SinglyLinkedList_Test.csproj
+tests/SinglyLinkedList_Test/obj/
+tests/SinglyLinkedList_Test/bin/
+
+## `bin/` & `obj` directorires for Class Library
+misc/libs/DataStructures_Library/DataStructures_Library.csproj
+misc/libs/DataStructures_Library/obj/
+misc/libs/DataStructures_Library/bin/
+
+## java related files
+algorithms/sorting/selection-sort/selection-sort-implementations/java/SelectionSort/target/
+data-structures/02-linked-lists/list-implementations/01-singly-linked/java/.classpath
+data-structures/02-linked-lists/list-implementations/01-singly-linked/java/.project
+data-structures/02-linked-lists/list-implementations/01-singly-linked/java/.gitignore
+
+## Misc files
+algorithms/sorting/selection-sort/select-sort-overview.md
+algorithms/sorting/selection-sort/selection-sort-implementations/java/SelectionSort/pom.xml
+data-structures/01-arrays/arrays-overview.md
+data-structures/01-arrays/common-problems.md
+data-structures/02-linked-lists/linked-list-overview.md
+data-structures/02-linked-lists/common-problems.md
+data-structures/03-stacks/common-problems.md
+data-structures/03-stacks/stack-overview.md
+data-structures/04-queues/common-problems.md
+data-structures/04-queues/queue-overview.md
+data-structures/05-trees/common-problems.md
+data-structures/05-trees/trees-overview.md
+data-structures/06-graphs/common-problems.md
+data-structures/06-graphs/graph-overview.md
+
+## Complete Directories
+big-o-notation/
+tests/
