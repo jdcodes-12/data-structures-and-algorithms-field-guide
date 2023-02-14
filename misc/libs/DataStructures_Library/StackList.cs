@@ -1,6 +1,6 @@
 namespace DataStructuresLib
 {
-    public class DoublyLinkedList
+    public class StackList
     {
 
     }
