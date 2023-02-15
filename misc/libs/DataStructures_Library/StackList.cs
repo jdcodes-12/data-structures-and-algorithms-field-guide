@@ -71,8 +71,15 @@ namespace DataStructuresLib
             else return Top;
         }
 
+        
         // PeekAtPosition()
-        // ClearStack()
+        public bool ClearStack()
+        {
+            Base = null;
+            Top = null;
+            Size = 0;
+            return true;
+        }
         // DisplayStack()
         
         public bool IsEmpty() => Size <= 0;
