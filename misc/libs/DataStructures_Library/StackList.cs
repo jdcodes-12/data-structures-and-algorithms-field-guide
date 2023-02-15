@@ -43,15 +43,35 @@ namespace DataStructuresLib
             }
         }
         
+        public DoubleLinkNode Pop()
+        {
+            if (IsEmpty()) return null;
+
+            else if (OnlyOneNodeInStack())
+            {
+                DoubleLinkNode oldTop = Top;
+                Top = null;
+                Base = null;
+                Size--;
+                return oldTop;
+            }
+
+            else
+            {
+                DoubleLinkNode oldTop = Top;
+                Top = Top.PrevLink;
+                Size--;
+                return oldTop;
+            }
+        }
        
         public DoubleLinkNode Peek()
         {
             if (IsEmpty()) return null;
             else return Top;
         }
+
         // PeekAtPosition()
-        // Push()
-        // Pop()
         // ClearStack()
         // DisplayStack()
         
